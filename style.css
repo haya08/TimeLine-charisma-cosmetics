@@ -282,3 +282,189 @@ body {
   transition: 0.3s;
   /* cursor: pointer; */
 }
+
+
+
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+
+  .dashboard {
+    flex-direction: column;
+  }
+
+  /* sidebar */
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .sidebar ul {
+    padding: 0;
+  }
+
+  .sidebar li {
+    font-size: 14px;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  /* main */
+  .main {
+    padding: 15px;
+  }
+
+  /* cards */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card span {
+    font-size: 20px;
+  }
+
+  /* charts */
+  .charts {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-box {
+    width: 90%;
+    overflow-x: none;
+  }
+
+  canvas {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* timeline
+  .timeline {
+    width: 100%;
+    overflow-x: auto;
+    height: 180px;
+  }
+
+  .step {
+    font-size: 11px;
+    width: 70px;
+  }
+
+  .step span {
+    font-size: 10px;
+  }
+
+  .step.current::after {
+    font-size: 9px;
+    padding: 3px 8px;
+    top: -45px;
+  } */
+
+  /* 📱 Mobile Timeline Fix */
+@media (max-width: 768px) {
+
+  .timeline-container {
+    padding: 20px 15px;
+    overflow: hidden;
+  }
+
+  .timeline {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    position: relative;
+    padding-right: 25px;
+  }
+
+  /* vertical line */
+  .line {
+    width: 4px;
+    height: 100%;
+    left: 10px;
+    top: 0;
+    border-radius: 20px;
+  }
+
+  .line-fill {
+    width: 4px;
+    left: 10px;
+    top: 0;
+    border-radius: 20px;
+  }
+
+  .step {
+    position: relative;
+    top: unset;
+    left: unset !important;
+    transform: none !important;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 13px;
+  }
+
+  .step::before {
+    position: absolute;
+    right: -6px;
+    top: 0;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    transform: none;
+  }
+
+  .step p,
+  .step span {
+    margin: 0;
+  }
+
+  .step p {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .step span {
+    font-size: 11px;
+    color: #aaa;
+  }
+
+  .step.current::after {
+    top: -30px;
+    right: -15px;
+    left: unset;
+    transform: none;
+    font-size: 10px;
+  }
+}
+
+  /* footer */
+  .footer {
+    padding: 15px;
+  }
+
+  .social-media-icons i {
+    font-size: 20px;
+    margin: 0 6px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+}
