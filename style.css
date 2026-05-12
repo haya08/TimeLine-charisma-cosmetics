@@ -34,6 +34,13 @@ body {
   z-index: 2;
 }
 
+/* project title */
+.project-title {
+  /* color: #00ffa6; */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
 /* sidebar */
 .sidebar {
   width: 220px;
@@ -288,6 +295,11 @@ body {
 
 /* 📱 Mobile Responsive */
 @media (max-width: 768px) {
+
+  .project-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
 
   .dashboard {
     flex-direction: column;

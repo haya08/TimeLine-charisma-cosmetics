@@ -6,6 +6,9 @@ fetch("data.json")
     document.getElementById("title").innerText =
       `Project: ${data.project}`;
 
+    // add a class to the title
+    document.getElementById("title").classList.add("project-title");
+
     // 🔥 cards
     const cards = document.getElementById("cards");
 
