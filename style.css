@@ -246,7 +246,7 @@ body {
 /* النص */
 .step.current {
   color: #00ffa6;
-  font-weight: bold;    
+  font-weight: bold;
   transform: translateX(-50%) translateY(-7%);
 }
 
